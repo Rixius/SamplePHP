@@ -44,6 +44,8 @@ class Db{
     fwrite($temp, $this->deflate($this->fArr));
     
   }
+  // Apparently I didn't ahve a Disclaimer here that said that this is in no way encrypting/decrypting .__.
+  // Seriously don't use this. Encryp with a SHA-256 Hash + salt or something >_>
   public function ecrypt($inp){
     $oput = array();
     foreach($inp as $a=>$b){
